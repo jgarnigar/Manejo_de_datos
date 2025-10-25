@@ -40,19 +40,24 @@ La estructura de datos del proyecto es:
 
 ┃ ┗ 📄 copia.txt
 
+
+┣ 📂 documentación → Archivos de documentación del proyecto
+
+┃ ┣ 📄 Proyecto_instrucciones.pdf
+
+┃ ┗ 📄 MANUAL_DE_USUARIO.md
+
 ┣ 📂 funciones → Función para diseños.
 
-┃ ┣ 📂 pycache
+┃ ┣ 📂 __pycache__
 
 ┃ ┗ 📄 diseños.py
 
 ┣ 📂 imagenes → Recursos gráficos.
 
-┃ ┗ 📄 halloween.png
-
 ┣ 📂 ventanas → Interfaces PySide6 y Funcionamiento
 
-┃ ┣ 📂 pycache
+┃ ┣ 📂 __pycache__
 
 ┃ ┣ 📄 menu_principal.py
 
@@ -66,11 +71,16 @@ La estructura de datos del proyecto es:
 
 ┃ ┗ 📄 ventana_mostrar.py
 
-┣ 📄 main.py → Archivo principal para ejecutar el programa.
+┣ 📄 .gitignore → Archivos y carpetas a ignorar por Git
+
+┣ 📄 main.py → Archivo principal para ejecutar el programa
 
 ┣ 📄 README.md → Documentación del proyecto
 
-┗ 📄 requirements.txt → Dependencias necesarias para ejecutar el proyecto
+┣ 📄 requirements.txt → Dependencias necesarias para ejecutar el 
+proyecto
+
+┗ 📄 DOCUMENTACION_TECNICA.md → Documentación técnica completa
 
 
 ## 💾 Datos guardados

@@ -1,4 +1,5 @@
 from PySide6.QtWidgets import QWidget, QPushButton, QGridLayout, QSizePolicy, QLineEdit, QMessageBox,QWidget
+from PySide6.QtCore import Qt
 from funciones.diseños import *
 import shutil
 
@@ -27,6 +28,7 @@ class VentanaEliminar(QWidget):
         self.layout.addWidget(self.obtener_id, 0, 1)
         self.obtener_id.setMinimumSize(200, 30)
         self.obtener_id.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        self.obtener_id.setAlignment(Qt.AlignCenter)
 
 
         #boton para regresar al menú principal

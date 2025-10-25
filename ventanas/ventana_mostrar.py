@@ -54,6 +54,13 @@ class VentanaMostrar(QWidget):
 
             for line in lines:
                 valor = line.strip().split(",")
+
+                if not line:
+                    continue
+
+                if len(valor) < 4:
+                    continue
+
                 self.form_layout.addRow("ID: ", QLabel(valor[0]))
                 self.form_layout.addRow("Nombre: ", QLabel(valor[1]))
                 self.form_layout.addRow("cantidad: ", QLabel(valor[2]))

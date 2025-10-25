@@ -1,0 +1,7 @@
+
+Librerías:
+from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QGridLayout, QLabel, QSizePolicy, QGraphicsDropShadowEffect, QLineEdit, QMessageBox, QFormLayout, QLabel, QWidget, QVBoxLayout
+from PySide6.QtGui import QPixmap, QFont, QColor
+from PySide6.QtCore import Qt
+import shutil
+

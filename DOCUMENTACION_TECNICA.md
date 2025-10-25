@@ -137,5 +137,6 @@ Para ejecutar el programa abra una terminal desde la carpeta **PROYECTO MANEJO D
 
 ## 👨‍💻 Autor
 
-Desarollado por ***Junior Eduardo Garniga Rojas***
-
+Desarrollado por **Junior Eduardo Garniga Rojas**  
+📧 Contacto: [ jgarnigar@miumg.edu.gt ] 
+🔗 GitHub: [jgarnigar](https://github.com/jgarnigar)

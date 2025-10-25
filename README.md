@@ -1,12 +1,15 @@
-# Manejo de datos ABC
+# 📊 Manejo de Datos ABC
 Proyecto manejo de datos | Algoritmos | Junior Eduardo Garniga Rojas
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/jgarnigar/Manejo_de_datos)
+
 
 ---
 
-## Descripción
+## 🧩 Descripción
 Un proyecto presentado para el manejo de datos: **Agregar, Buscar, Eliminar, Modificar y Mostrar** . Desarrollada con **PySide6** para una interfaz gráfica.
 
-## Requisitos e instalación
+## ⚙️ Requisitos e instalación
 
 ### Requisitos
 
@@ -15,9 +18,17 @@ Un proyecto presentado para el manejo de datos: **Agregar, Buscar, Eliminar, Mod
 
 ### Instalación
 
-Para instalar el proyecto por favor clone el repositorio
+- Para instalar el proyecto por favor clone el repositorio:
 
-## Estructura
+- [Proyecto Manejo de Datos](https://github.com/jgarnigar/Manejo_de_datos)
+
+Instalar dependencias:
+
+        pip install -r requirements.txt
+
+
+
+## 🗂️ Estructura
 
 La estructura de datos del proyecto es:
 
@@ -59,62 +70,54 @@ La estructura de datos del proyecto es:
 
 ┣ 📄 README.md → Documentación del proyecto
 
-┗ 📄 requerimientos.txt → Dependencias necesarias para ejecutar el proyecto
+┗ 📄 requirements.txt → Dependencias necesarias para ejecutar el proyecto
 
 
-## Datos guardados
+## 💾 Datos guardados
 
 Los datos se han guardado en la carpeta datos y se tienen los datos:
 1. 📄 archivos.txt       → Los datos guardados
 2. 📄 copia.txt          → Copia para modificar y eliminar
 
 
-## Procesamientos de datos
+## ⚙️Procesamiento de datos
 
-### Menu Principal
+### 🏠 Menu Principal
 
 El menú principal nos motrará los botones: **Agrear Buscar Elminar Modificar Mostrar**
 
-- ### Agregar
+- ### 🔹 Agregar
 
-    - Los datos guardados en agregar con la clase **VentanaAgregar** guardará los datos en **datos/archivos.txt** 
+    - Pedimos **ID, Nombre, Cantidad, Precio** y los guardamos en **datos/archivos.txt**
 
-- ### Buscar
+- ### 🔹 Buscar
 
-    - Buscamos los datos utilizando la clase **VentanaBuscar** la cual buscará línea por línea un **ID** en **datos/archivos.txt**. Cuando encuentra el ID, muestra la línea completa en pantalla con una **layout.form**. Si el ID no se encuentra mostrará en pantalla una alerta.
+    - Pedimos un **ID** y lo buscamos en **datos/archivos.txt**. Si el **ID** es encontrado, lo mostramos en pantalla, sino mostramos una alerta.
 
-- ### Elminiar
+- ### 🔹 Elminiar
 
-    - Mostramos una advertencia si el usuario sí desea eliminar los datos.
+    - Pedimos un **ID** para el producto, lo buscamos en **datos/archivos.txt** y lo eliminamos.
 
-    - Para eliminar un dato usamos la clase **VentanaEliminar** la cual pedirá un **ID**. Buscamos línea por línea en **datos/archivos.txt** el ID brindado y copia cada línea y la pegamos en **datos/copia.txt**, y si encontramos el **ID**, nos saltamos esa línea, es decir; esa línea no se copia en **datos/copia.txt**. Por último usamos la librería **shutil** para copiar los nuevos datos de **datos/copia.txt** y pasarlos sobreescribiendo el archivo **datos/archivos.txt**. 
+- ### 🔹 Modificar
 
-    - Si el **ID** nunca fue encontrado, aún copia y pegamos los datos para evitar tener que hacerlo dos veces. Si el **ID** nunca es encontrado, mostramos una alerta de que el ID no fue encontrado.
+    - Pedimos un **ID(mandatorio), Nombre, Cantidad, Precio** para el producto, lo buscamos en **datos/archivos.txt** y modificamos la línea por los datos ingresados.
 
-- ### Modificar
+- ### 🔹 Mostrar
 
-    - Mostramos una advertencia si el usuario sí desea modificar los datos.
+    - Mostramos todos los datos de **datos/archivox.txt** y los mostramos por pantalla.
 
-    - Para modificar datos utilizamos la clase **VentanaModificar** la cual pedirá el **ID, Nombre, Cantidad y Precio**.
+- ### 📄 Documentación Técnica
+    - Consulta la [documentación técnica completa](DOCUMENTACION_TECNICA.md) para ver el funcionamiento interno de cada ventana.
 
-    - Buscamos en el archivo **datos/archivos.txt** el **ID** brindado y sobreescribimos el archivo **datos/copia.txt**. Cuando el programa encuentre la línea con el **ID** modificaremos los valores de esa línea por los valores ingresados únicamente de aquellos parámetros ingresados, es decir; si nombre no fue ingresado, no modificaremos el nombre original del proyecto.
 
-    - Si el **ID** no es encontrado, mostramos una advertencia que el ID no fue encontrado. Como el archivo **datos/copia.txt** fue modificado, usamos la librería **shutil** para copiar esos datos a **datos/archivos.txt**.
-
-- ### Mostrar
-
-    - Para mostrar todos los datos en **datos/archivos.txt** utilizamos la clase **VentanaMostrar** la cual pedirá un **ID**. Buscamos el **ID** en **datos/archivos.txt** y si el ID es encontrado, mostramos los datos en pantalla con un **layout.form**.
-
-    - Si el **ID** no es encontrado, nostramos en pantalla una advertencia de que el **ID** no fue encontrado.
-
-## Ejecución
+## ▶️ Ejecución
 
 Para ejecutar el programa abra una terminal desde la carpeta **PROYECTO MANEJO DE DATOS** y ejecute la siguiente línea de código:
 
         python main.py
 
 
-## Autor
+## 👨‍💻 Autor
 
 Desarollado por ***Junior Eduardo Garniga Rojas***
 
